@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\ParticipanteModel;
+
 class AdminController extends BaseController
 {
     public function index()
@@ -16,8 +18,13 @@ class AdminController extends BaseController
             return redirect()->to('/login');
         }
         
-        return view('admin/dashboard', [
-            'title' => 'Dashboard - Carrera Aceros'
-        ]);
+        $participanteModel = new ParticipanteModel();
+        
+        $data = [
+            'title' => 'Dashboard - Carrera Aceros',
+            'estadisticas' => $participanteModel->getEstadisticas()
+        ];
+        
+        return view('admin/dashboard', $data);
     }
 }

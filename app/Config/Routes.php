@@ -18,4 +18,12 @@ $routes->get('/logout', '\CodeIgniter\Shield\Controllers\LoginController::logout
 // Rutas protegidas del admin
 $routes->group('admin', ['filter' => 'session'], function($routes) {
     $routes->get('dashboard', 'AdminController::dashboard');
+    
+    // Rutas de participantes (CRUD completo)
+    $routes->get('participantes', 'ParticipanteController::index');
+    $routes->get('participantes/create', 'ParticipanteController::create');
+    $routes->post('participantes/store', 'ParticipanteController::store');
+    $routes->get('participantes/edit/(:num)', 'ParticipanteController::edit/$1');
+    $routes->post('participantes/update/(:num)', 'ParticipanteController::update/$1');
+    $routes->get('participantes/delete/(:num)', 'ParticipanteController::delete/$1');
 });
