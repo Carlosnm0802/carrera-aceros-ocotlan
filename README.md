@@ -1,69 +1,45 @@
-# CodeIgniter 4 Application Starter
+# Sistema de Gestión de Inscripciones - Carrera Aceros Ocotlán
 
-## What is CodeIgniter?
+## Descripción
+MVP para la gestión de inscripciones de la Carrera Aceros Ocotlán. 
+Sistema que centraliza registros de Google Forms en una base de datos MySQL 
+con panel administrativo para validación y análisis.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## Objetivo del MVP
+- Registrar automáticamente participantes desde Google Forms
+- Administrar y validar inscripciones
+- Visualizar métricas clave del evento
+- Exportar datos para la organización
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Stack Tecnológico
+- **Backend:** CodeIgniter 4 (PHP 8.2+)
+- **Base de datos:** MySQL 8.0+
+- **Frontend:** Bootstrap 5 + Chart.js
+- **Integración:** Google Sheets API
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## Instalación
+1. Clonar repositorio: `git clone https://github.com/TU_USUARIO/carrera-aceros-ocotlan.git`
+2. Instalar dependencias: `composer install`
+3. Configurar `.env` con credenciales de base de datos
+4. Ejecutar migraciones: `php spark migrate`
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+## Roadmap de 7 Días
+| Día | Objetivo | Estado |
+|-----|----------|--------|
+| 1 | Setup y configuración base | ✅ COMPLETADO |
+| 2 | Autenticación y base de datos | 📅 PENDIENTE |
+| 3 | CRUD completo de participantes | 📅 PENDIENTE |
+| 4 | Integración Google Sheets | 📅 PENDIENTE |
+| 5 | Dashboard con métricas | 📅 PENDIENTE |
+| 6 | Exportación y filtros | 📅 PENDIENTE |
+| 7 | Producción y documentación | 📅 PENDIENTE |
 
-## Installation & updates
+##  Enlaces importantes
+- **Google Form:** [https://forms.gle/FYm138FdCUnKondJ9]
+- **Google Sheet:** [https://docs.google.com/spreadsheets/d/18vjspw-uuMg9EwkHpT0xlIlSJlWgCle9nDyAuKaTKyw/edit?usp=sharing]
+- **Panel Admin:** http://localhost:8080/admin (desarrollo)
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
-
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
-
-## Setup
-
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
-
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 8.2 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - The end of life date for PHP 8.1 was December 31, 2025.
-> - If you are still using below PHP 8.2, you should upgrade immediately.
-> - The end of life date for PHP 8.2 will be December 31, 2026.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+## 📞 Contacto
+- Desarrollador: [Carlos Nares]
+- Email: [carlosnaresmon@gmail.com]
+- Proyecto iniciado: [07/02/2026]
