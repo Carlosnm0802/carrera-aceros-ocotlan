@@ -26,4 +26,7 @@ $routes->group('admin', ['filter' => 'session'], function($routes) {
     $routes->get('participantes/edit/(:num)', 'ParticipanteController::edit/$1');
     $routes->post('participantes/update/(:num)', 'ParticipanteController::update/$1');
     $routes->get('participantes/delete/(:num)', 'ParticipanteController::delete/$1');
-});
+    $routes->get('sync', 'SyncController::index');
+    $routes->get('sync/test', 'SyncController::testConnection');
+    $routes->post('sync/sync-now', 'SyncController::syncNow');
+    });

@@ -18,7 +18,7 @@ con panel administrativo para validación y análisis.
 - **Integración:** Google Sheets API
 
 ## Instalación
-1. Clonar repositorio: `git clone https://github.com/TU_USUARIO/carrera-aceros-ocotlan.git`
+1. Clonar repositorio: `git clone https://github.com/CarlosNm0802/carrera-aceros-ocotlan.git`
 2. Instalar dependencias: `composer install`
 3. Configurar `.env` con credenciales de base de datos
 4. Ejecutar migraciones: `php spark migrate`
@@ -27,9 +27,9 @@ con panel administrativo para validación y análisis.
 | Día | Objetivo | Estado |
 |-----|----------|--------|
 | 1 | Setup y configuración base | ✅ COMPLETADO |
-| 2 | Autenticación y base de datos | 📅 PENDIENTE |
-| 3 | CRUD completo de participantes | 📅 PENDIENTE |
-| 4 | Integración Google Sheets | 📅 PENDIENTE |
+| 2 | Autenticación y base de datos | ✅ COMPLETADO |
+| 3 | CRUD completo de participantes | ✅ COMPLETADO |
+| 4 | Integración Google Sheets | ✅ COMPLETADO |
 | 5 | Dashboard con métricas | 📅 PENDIENTE |
 | 6 | Exportación y filtros | 📅 PENDIENTE |
 | 7 | Producción y documentación | 📅 PENDIENTE |

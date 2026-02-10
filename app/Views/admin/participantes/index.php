@@ -31,6 +31,11 @@
                             <i class="bi bi-people-fill"></i> Participantes
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/sync">
+                            <i class="bi bi-cloud-arrow-down"></i> Sincronizar
+                        </a>
+                    </li>
                 </ul>
                 <div class="navbar-nav">
                     <span class="nav-link text-light">
