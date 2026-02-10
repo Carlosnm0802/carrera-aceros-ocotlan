@@ -32,6 +32,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/admin/reportes">
+                            <i class="bi bi-graph-up me-2"></i> Reportes
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/admin/sync">
                             <i class="bi bi-cloud-arrow-down"></i> Sincronizar
                         </a>

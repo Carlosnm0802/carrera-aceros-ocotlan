@@ -115,6 +115,11 @@
             <div class="collapse navbar-collapse" id="navbarMain">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
+                        <a class="nav-link" href="/admin/reportes">
+                            <i class="bi bi-graph-up me-2"></i> Reportes
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/admin/sync">
                             <i class="bi bi-cloud-arrow-down me-2"></i> Sincronizar
                         </a>
@@ -152,7 +157,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/admin/reportes">
                                 <i class="bi bi-graph-up me-2"></i> Reportes
                             </a>
                         </li>
